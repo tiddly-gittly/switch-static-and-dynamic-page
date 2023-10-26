@@ -5,8 +5,8 @@ tags: $:/tags/ViewTemplate
 在静态卡片左下方展示「打开完整功能可交互卡片」按钮（在交互卡片的视图工具栏展示「打开静态单页卡片」按钮）
 此时 tv-config-static 为 yes （>= 5.3.0）
 -->
-<$list filter="[<tv-config-static>compare:string:eq[yes]]">
-<$list variable="tid" filter="[all[current]!prefix[$:]]">
+<$list filter="[<tv-config-static>compare:string:eq[yes]]" variable="_discard">
+<$list filter="[all[current]!prefix[$:]]" variable="_discard">
 <<link-to-interactive-card>>
 </$list>
 </$list>

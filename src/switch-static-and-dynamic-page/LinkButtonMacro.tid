@@ -2,13 +2,17 @@ title: $:/plugins/linonetwo/switch-static-and-dynamic-page/LinkButtonMacro
 tags: $:/tags/Macro
 
 \define link-to-static-card()
-<a class="link-btn" href={{{ [[/]addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix[/]addsuffix<currentTiddler>] }}} rel="noopener noreferrer" target="_blank">
-<$button>单页卡片</$button>
+<a class="link-btn" href={{{ [[/]addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix<currentTiddler>] }}} rel="noopener noreferrer" target="_blank">
+  <$button>
+    <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang"><$list filter="[<lang>search[zh]]">打开静态卡片</$list><$list filter="[<lang>!search[zh]]">Open Static Card</$list></$list>
+  </$button>
 </a>
 \end
 
 \define link-to-interactive-card()
-<a href={{{ [[/]addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix[/#]addsuffix<currentTiddler>] }}} rel="noopener noreferrer">
-<$button>交互卡片</$button>
+<a href={{{ [[/]addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix[#:]addsuffix<currentTiddler>] }}} rel="noopener noreferrer">
+  <$button>
+    <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang"><$list filter="[<lang>search[zh]]">打开可交互卡片</$list><$list filter="[<lang>!search[zh]]">Open Interactive Card</$list></$list>
+  </$button>
 </a>
 \end

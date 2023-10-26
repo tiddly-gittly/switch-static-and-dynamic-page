@@ -3,4 +3,4 @@ type: text/vnd.tiddlywiki
 
 !! Read Me
 
-The quick brown fox jumps over a lazy dog.
+We overwride the [[$:/core/templates/server/static.tiddler.wikitext]] to add support for `$:/tags/ViewTemplate`.

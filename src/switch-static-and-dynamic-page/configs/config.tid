@@ -1,6 +1,6 @@
 title: $:/plugins/linonetwo/switch-static-and-dynamic-page/config
 tags: $:/tags/ControlPanel/SettingsTab
-caption: Plugin Setting
+caption: Static Page Switch
 
 These settings let you customise the behaviour of static page switcher buttons.
 

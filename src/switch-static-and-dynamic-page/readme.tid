@@ -3,4 +3,9 @@ type: text/vnd.tiddlywiki
 
 !! Read Me
 
+# Allow you copy static page url using a view template button.
+# Allow viewer of your static page to switch to dynamic page using a button show on the card.
+
+!! Shadow tiddlers
+
 We overwride the [[$:/core/templates/server/static.tiddler.wikitext]] to add support for `$:/tags/ViewTemplate`.

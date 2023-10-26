@@ -1,0 +1,23 @@
+title: $:/plugins/linonetwo/switch-static-and-dynamic-page/ViewToolbar/copy-static-page-url-permalink
+tags: $:/tags/ViewToolbar
+caption: {{$:/core/images/permalink-button}} {{$:/language/Exporters/StaticRiver}} {{$:/language/Buttons/CopyToClipboard/Caption}}
+description: {{$:/language/Exporters/StaticRiver}}  {{$:/language/Buttons/CopyToClipboard/Hint}}
+
+\whitespace trim
+<$let
+  encodedTitle={{{ [<currentTiddler>encodeuricomponent[]] }}}
+  staticPageUrl={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath}addsuffix<encodedTitle>] }}}
+  buttonCaption={{{ [<staticPageUrl>addsuffix[ ]addsuffix{$:/language/Buttons/CopyToClipboard/Caption}] }}}
+>
+  <$button message="tm-copy-to-clipboard" param=<<staticPageUrl>> tooltip=<<buttonCaption>> aria-label=<<buttonCaption>> class=<<tv-config-toolbar-class>>>
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/core/images/permalink-button}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text=<<buttonCaption>>/>
+      </span>
+    </$list>
+  </$button>
+</$let>
+

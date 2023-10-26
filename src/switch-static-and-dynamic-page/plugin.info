@@ -1,0 +1,9 @@
+{
+  "title": "$:/plugins/linonetwo/switch-static-and-dynamic-page",
+  "author": "LinOnetwo",
+  "description": "Add button to switch between nodejs static single card page and full feature single page app story flow view.",
+  "core-version": ">=5.1.22",
+  "plugin-type": "plugin",
+  "version": "0.0.1",
+  "list": "readme config tree"
+}

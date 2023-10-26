@@ -1,0 +1,16 @@
+title: $:/plugins/linonetwo/switch-static-and-dynamic-page/config
+tags: $:/tags/ControlPanel/SettingsTab
+caption: Plugin Setting
+
+These settings let you customise the behaviour of static page switcher buttons.
+
+---
+
+;Your website host, ends with `/` (for example, if your wiki is in `https://pimgeek.com/notes/`, this will be `https://pimgeek.com/` here)
+:<$edit-text tiddler="$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost" tabindex=-1 focus=false cancelPopups="yes" fileDrop=no tag="input" />
+;Extra path after website host (for example, if your wiki is in `https://pimgeek.com/notes/`, you need to fill `notes/` here)
+:<$edit-text tiddler="$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath" tabindex=-1 focus=false cancelPopups="yes" fileDrop=no tag="input" />
+
+An example of static page url will be:
+
+{{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath}addsuffix<currentTiddler>] }}}

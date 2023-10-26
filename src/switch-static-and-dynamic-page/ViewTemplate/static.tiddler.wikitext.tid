@@ -1,6 +1,12 @@
 title: $:/core/templates/server/static.tiddler.wikitext
+code-body: yes
 
 \whitespace trim
+<!-- Modification here -->
+<!-- Show things before the title -->
+<$list filter="[all[shadows]tag[$:/tags/ViewTemplate]allbefore[$:/core/ui/ViewTemplate/title]prefix[$:/plugins/]]" variable="listItem">
+  <$transclude tiddler=<<listItem>>/>
+</$list>
 <div class="tc-tiddler-title">
 <div class="tc-titlebar">
 <h2><$text text=<<currentTiddler>>/></h2>
@@ -18,11 +24,16 @@ title: $:/core/templates/server/static.tiddler.wikitext
 </a>
 </$list>
 </div>
+<!-- Modification here -->
+<!-- Show things before the body text -->
+<$list filter="[all[shadows]tag[$:/tags/ViewTemplate]allafter[$:/core/ui/ViewTemplate/title]allbefore[$:/core/ui/ViewTemplate/body]prefix[$:/plugins/]]" variable="listItem">
+  <$transclude tiddler=<<listItem>>/>
+</$list>
 <div class="tc-tiddler-body">
 <$transclude mode="block"/>
 </div>
 <!-- Modification here, add support for `$:/tags/ViewTemplate`, so our `$:/plugins/linonetwo/switch-static-and-dynamic-page/ViewTemplate/link-view-template` can work. -->
 <!-- Also ignore system view templates (for example title and text, which already exist as input, so don't need them), only support UI added by other plugins (for example SuperTag). Copied from `$:/plugins/linonetwo/tw-calendar/calendar-widget/tiddlywiki-ui/popup/EventPreview/PluginDefaultViewTemplate` -->
-<$list filter="[all[shadows]tag[$:/tags/ViewTemplate]prefix[$:/plugins/]] [all[tiddlers]tag[$:/tags/ViewTemplate]!is[draft]]" variable="listItem">
+<$list filter="[all[shadows]tag[$:/tags/ViewTemplate]allafter[$:/core/ui/ViewTemplate/body]prefix[$:/plugins/]] [all[tiddlers]tag[$:/tags/ViewTemplate]!is[draft]]" variable="listItem">
   <$transclude tiddler=<<listItem>>/>
 </$list>

@@ -3,9 +3,8 @@ tags: $:/tags/Macro
 
 \define t(key,lingo-base-fallback:"")
 <$set name="lingoBaseWithFallback" value="$lingo-base-fallback$" emptyValue=<<lingo-base>>>
-<$log />
-  <$list filter="[[$:/language]get[text]get[name]else[en-GB]]" variable="lang">
+  <$set name="lang" filter="[[$:/language]get[text]get[name]else[en-GB]]">
     <$text text={{{[<lingoBaseWithFallback>addsuffix<lang>addsuffix[/]addsuffix<__key__>get[text]]}}} />
-  </$list>
+  </$set>
 </$set>
 \end

@@ -1,13 +1,14 @@
 title: $:/plugins/linonetwo/switch-static-and-dynamic-page/ViewToolbar/copy-static-page-url-permalink
 tags: $:/tags/ViewToolbar
-caption: {{$:/plugins/linonetwo/switch-static-and-dynamic-page/images/link-three-fill}} {{$:/language/Exporters/StaticRiver}} {{$:/language/Buttons/CopyToClipboard/Caption}}
+caption: {{$:/plugins/linonetwo/switch-static-and-dynamic-page/images/link-three-fill}} <<t "CopyStaticUrlToClipboard" "$:/plugins/linonetwo/switch-static-and-dynamic-page/languages/">>
 description: {{$:/language/Exporters/StaticRiver}}  {{$:/language/Buttons/CopyToClipboard/Hint}}
 
+\define lingo-base() $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/
 \whitespace trim
 <$let
   encodedTitle={{{ [<currentTiddler>encodeuricomponent[]] }}}
   staticPageUrl={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath}addsuffix<encodedTitle>] }}}
-  buttonCaption={{{ [<staticPageUrl>addsuffix[ ]addsuffix{$:/language/Buttons/CopyToClipboard/Caption}] }}}
+  buttonCaption=<<get-view-toolbar-copy-button-caption>>
 >
   <$button message="tm-copy-to-clipboard" param=<<staticPageUrl>> tooltip=<<buttonCaption>> aria-label=<<buttonCaption>> class=<<tv-config-toolbar-class>>>
     <$list filter="[<tv-config-toolbar-icons>match[yes]]">
@@ -15,7 +16,7 @@ description: {{$:/language/Exporters/StaticRiver}}  {{$:/language/Buttons/CopyTo
     </$list>
     <$list filter="[<tv-config-toolbar-text>match[yes]]">
       <span class="tc-btn-text">
-        {{$:/language/Exporters/StaticRiver}}  {{$:/language/Buttons/CopyToClipboard/Hint}}
+        <<t "CopyStaticUrlToClipboard">>
       </span>
     </$list>
   </$button>

@@ -1,9 +1,18 @@
 created: 20231026152100739
 icon: 📒
-modified: 20231026173233309
+modified: 20231028114016557
 page-cover: https://images.unsplash.com/photo-1696550579939-6d5134d4bfc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5ODM0MTUyMA&ixlib=rb-4.0.3&q=80&w=1080
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
 
+\define lingo-base() $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/
+
+
 Test
+
+<<t "CopyStaticUrlToClipboard" "$:/plugins/linonetwo/switch-static-and-dynamic-page/languages/">>
+
+<<t "CopyStaticUrlToClipboard">>
+
+<<t "Test" "">>

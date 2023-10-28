@@ -1,0 +1,20 @@
+title: $:/plugins/linonetwo/switch-static-and-dynamic-page/Macros/LinkButtonMacro
+tags: $:/tags/Macro
+
+\define lingo-base() $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/
+
+\define link-to-static-card()
+<a class="link-btn" href={{{ [[/]addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix<currentTiddler>] }}} rel="noopener noreferrer" target="_blank">
+  <$button>
+    <<t "OpenStaticCard">>
+  </$button>
+</a>
+\end
+
+\define link-to-interactive-card()
+<a href={{{ [[/]addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix[#:]addsuffix<currentTiddler>] }}} rel="noopener noreferrer">
+  <$button>
+    <<t "OpenInteractiveCard">>
+  </$button>
+</a>
+\end

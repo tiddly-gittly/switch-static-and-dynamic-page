@@ -1,0 +1,6 @@
+title: $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/zh-Hans/
+
+OpenInteractiveCard: 打开可交互卡片
+OpenStaticCard: 打开静态卡片
+CopyStaticUrlToClipboard: 复制静态服务器页面地址到剪贴板
+CopyStaticUrlToClipboardDescription: 将本条目在线上网站对应的静态卡片网址复制到剪贴板方便分享

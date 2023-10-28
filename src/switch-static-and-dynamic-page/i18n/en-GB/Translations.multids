@@ -1,0 +1,6 @@
+title: $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/en-GB/
+
+OpenInteractiveCard: Open Interactive Card
+OpenStaticCard: Open Static Card
+CopyStaticUrlToClipboard: Copy Static Server Page URL To Clipboard
+CopyStaticUrlToClipboardDescription: Copy the URL of the online site static card of this tiddler to the clipboard for sharing

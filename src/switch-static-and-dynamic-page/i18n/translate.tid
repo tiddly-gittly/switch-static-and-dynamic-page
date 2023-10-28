@@ -1,0 +1,11 @@
+title: $:/core/i18n/translate-macro
+tags: $:/tags/Macro
+
+\define t(key,lingo-base-fallback:"")
+<$set name="lingoBaseWithFallback" value="$lingo-base-fallback$" emptyValue=<<lingo-base>>>
+<$log />
+  <$list filter="[[$:/language]get[text]get[name]else[en-GB]]" variable="lang">
+    <$text text={{{[<lingoBaseWithFallback>addsuffix<lang>addsuffix[/]addsuffix<__key__>get[text]]}}} />
+  </$list>
+</$set>
+\end

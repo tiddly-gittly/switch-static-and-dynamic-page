@@ -16,3 +16,17 @@ Test
 <<t "CopyStaticUrlToClipboard">>
 
 <<t "Test" "">>
+
+<<dbadge 笔记应用 "[[TGNote|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]" info>> <<dbadge 部署 "[[Github Actions|https://github.com/tiddly-gittly/TiddlyGit-Desktop/actions]]" success>> <<dbadge 双向链接 "[[支持|https://zhuanlan.zhihu.com/p/140473235]]" "danger">>
+
+<<reuse-tiddler "快速创建新笔记按钮">>
+
+<$transclude $variable="details" label="本知识库的介绍（来访者㐓点击查看）" src="{{本知识库的介绍}}" labelClass="bg-secondary text-white"/>
+
+<$transclude $variable="details" label="聚合优先待办列表" src="$:/plugins/linonetwo/intention-tower-knowledge-graph/ViewTemplate/PriorityTaskDynamicTable" labelClass="bg-secondary text-white"/>
+
+<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js"  $height="200px" subfilter="[!is[shadow]!is[system]!field:calendarEntry[yes]]" />
+
+注意[[早睡早起]]
+
+<<reuse-tiddler "最近一年熬夜的天数">>

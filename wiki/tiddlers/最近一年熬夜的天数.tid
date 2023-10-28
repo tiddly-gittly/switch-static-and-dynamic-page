@@ -27,7 +27,7 @@ option = {
 
 <div style="display: flex; flex-wrap: wrap;">
 		<div style="width: 100%; box-sizing: border-box; padding: 10px;">
-			<$echarts $text=<<liquid-fill-percentage>> />
+			<$echarts $text=<<liquid-fill-percentage>> $height="200px" $width="200px" />
 		</div>
 		<div style="width: 50%; box-sizing: border-box; padding: 10px;">
 				过去 <<总天数>> 天总共熬夜了 <<熬夜天数>> 次！

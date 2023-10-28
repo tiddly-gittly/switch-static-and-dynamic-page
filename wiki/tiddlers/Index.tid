@@ -25,7 +25,11 @@ Test
 
 <$transclude $variable="details" label="聚合优先待办列表" src="$:/plugins/linonetwo/intention-tower-knowledge-graph/ViewTemplate/PriorityTaskDynamicTable" labelClass="bg-secondary text-white"/>
 
-<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js"  $height="200px" subfilter="[!is[shadow]!is[system]!field:calendarEntry[yes]]" />
+```tid
+<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="1000px" $height="200px" subfilter="[!is[shadow]!is[system]!field:calendarEntry[yes]]" />
+```
+
+<!-- <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="1000px" $height="200px" subfilter="[!is[shadow]!is[system]!field:calendarEntry[yes]]" /> -->
 
 注意[[早睡早起]]
 

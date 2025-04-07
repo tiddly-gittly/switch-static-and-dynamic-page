@@ -1,5 +1,5 @@
 title: $:/plugins/linonetwo/switch-static-and-dynamic-page/Macros/LinkButtonMacro
-tags: $:/tags/Macro
+tags: $:/tags/Global/View
 
 \procedure lingo-base() $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/
 

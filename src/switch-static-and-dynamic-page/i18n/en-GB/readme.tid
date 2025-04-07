@@ -2,8 +2,8 @@ title: $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/en-GB/readm
 
 !! Read Me
 
-# Allow you copy static page url using a view template button.
-# Allow viewer of your static page to switch to dynamic page using a button show on the card.
+# Allow you to copy the static page URL using the view template button {{$:/plugins/linonetwo/switch-static-and-dynamic-page/ViewToolbar/copy-static-page-url-permalink!!caption}} (may be hidden in more {{$:/core/ui/Buttons/more-tiddler-actions}} button).
+# Allow viewer of your static page to switch to dynamic page using a button  <<link-to-interactive-card>> show on the card.
 
 !! Shadow tiddlers
 

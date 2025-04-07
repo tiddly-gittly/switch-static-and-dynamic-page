@@ -2,8 +2,8 @@ title: $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/zh-Hans/rea
 
 !! 自述文件
 
-# 允许您使用视图模板按钮 {{$:/plugins/linonetwo/switch-static-and-dynamic-page/ViewToolbar/copy-static-page-url-permalink}} 复制静态页面 URL。
-# 允许静态页面的查看者使用卡片上显示的按钮 {{$:/plugins/linonetwo/switch-static-and-dynamic-page/ViewTemplate/link-view-template}} 切换到动态页面。
+# 允许您使用视图模板按钮 {{$:/plugins/linonetwo/switch-static-and-dynamic-page/ViewToolbar/copy-static-page-url-permalink!!caption}} （可能隐藏在更多 {{$:/core/ui/Buttons/more-tiddler-actions}} 按钮里）复制静态页面 URL。
+# 允许静态页面的查看者使用卡片上显示的按钮 <<link-to-interactive-card>> 切换到动态页面。
 
 !! 影子条目
 

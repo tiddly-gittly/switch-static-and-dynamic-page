@@ -1,4 +1,4 @@
 title: $:/plugins/linonetwo/switch-static-and-dynamic-page/configs/
 
-SiteExtraPath: 
-SiteHost: https://wiki.onetwo.ren/
+SiteExtraPath: /
+SiteHost: wiki.onetwo.ren

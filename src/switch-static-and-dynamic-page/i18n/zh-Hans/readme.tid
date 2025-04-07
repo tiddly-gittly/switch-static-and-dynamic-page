@@ -8,3 +8,7 @@ title: $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/zh-Hans/rea
 !! 影子条目
 
 我们覆盖了 [[$:/core/templates/server/static.tiddler.wikitext]] 以添加对 `$:/tags/ViewTemplate` 的支持。
+
+!! 二次开发
+
+本插件提供了宏 `<<link-to-static-card>>` 和 `<<link-to-interactive-card>>`，可以在任何地方使用。

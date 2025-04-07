@@ -8,3 +8,7 @@ title: $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/en-GB/readm
 !! Shadow tiddlers
 
 We override the [[$:/core/templates/server/static.tiddler.wikitext]] to add support for `$:/tags/ViewTemplate`.
+
+!! For developers
+
+This plugin provides macros `<<link-to-static-card>>` and `<<link-to-interactive-card>>` that can be used anywhere.

@@ -1,5 +1,6 @@
 title: $:/plugins/linonetwo/switch-static-and-dynamic-page/ViewTemplate/link-view-template
 tags: $:/tags/ViewTemplate
+list-after: $:/core/ui/ViewTemplate/body
 
 <!--
 在静态卡片左下方展示「打开完整功能可交互卡片」按钮（在交互卡片的视图工具栏展示「打开静态单页卡片」按钮）

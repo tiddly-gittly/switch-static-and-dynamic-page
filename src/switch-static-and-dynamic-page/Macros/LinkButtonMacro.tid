@@ -1,10 +1,10 @@
 title: $:/plugins/linonetwo/switch-static-and-dynamic-page/Macros/LinkButtonMacro
-tags: $:/tags/Global/View
+tags: $:/tags/Global
 
 \procedure lingo-base() $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/
 
 \procedure link-to-static-card()
-<a class="link-btn" href={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix<currentTiddler>] }}} rel="noopener noreferrer" target="_blank">
+<a class="link-btn" href={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix<currentTiddler>] }}} style="text-decoration: none;">
   <$button>
     <<lingo "OpenStaticCard">>
   </$button>
@@ -12,7 +12,7 @@ tags: $:/tags/Global/View
 \end
 
 \procedure link-to-interactive-card()
-<a href={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix[#:]addsuffix<currentTiddler>] }}} rel="noopener noreferrer">
+<a href={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/config/SiteExtraPath}addsuffix[#:]addsuffix<currentTiddler>] }}} style="text-decoration: none;">
   <$button>
     <<lingo "OpenInteractiveCard">>
   </$button>

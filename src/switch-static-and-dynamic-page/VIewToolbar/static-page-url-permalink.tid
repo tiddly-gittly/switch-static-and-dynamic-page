@@ -1,9 +1,9 @@
 title: $:/plugins/linonetwo/switch-static-and-dynamic-page/ViewToolbar/copy-static-page-url-permalink
 tags: $:/tags/ViewToolbar
-caption: {{$:/plugins/linonetwo/switch-static-and-dynamic-page/images/link-three-fill}} <<t "CopyStaticUrlToClipboard" "$:/plugins/linonetwo/switch-static-and-dynamic-page/languages/">>
+caption: {{$:/plugins/linonetwo/switch-static-and-dynamic-page/images/link-three-fill}} <<lingo "CopyStaticUrlToClipboard" "$:/plugins/linonetwo/switch-static-and-dynamic-page/languages/">>
 description: {{$:/language/Exporters/StaticRiver}}  {{$:/language/Buttons/CopyToClipboard/Hint}}
 
-\define lingo-base() $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/
+\procedure lingo-base() $:/plugins/linonetwo/switch-static-and-dynamic-page/languages/
 \whitespace trim
 <$let
   encodedTitle={{{ [<currentTiddler>encodeuricomponent[]] }}}
@@ -16,7 +16,7 @@ description: {{$:/language/Exporters/StaticRiver}}  {{$:/language/Buttons/CopyTo
     </$list>
     <$list filter="[<tv-config-toolbar-text>match[yes]]">
       <span class="tc-btn-text">
-        <<t "CopyStaticUrlToClipboard">>
+        <<lingo "CopyStaticUrlToClipboard">>
       </span>
     </$list>
   </$button>

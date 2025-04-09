@@ -2,3 +2,4 @@ title: $:/plugins/linonetwo/switch-static-and-dynamic-page/configs/
 
 SiteExtraPath: /
 SiteHost: wiki.onetwo.ren
+SiteProtocol: https://

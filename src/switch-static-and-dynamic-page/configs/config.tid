@@ -8,6 +8,12 @@ caption: <<lingo config-title>>
 
 ---
 
+;<<lingo config-site-protocol>>
+:<$select tiddler="$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteProtocol" default="https://">
+<option value="http://">http://</option>
+<option value="https://">https://</option>
+<option value=""></option>
+</$select>
 ;<<lingo config-site-host>>
 :<$edit-text tiddler="$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost" tabindex=-1 focus=false cancelPopups="yes" fileDrop=no tag="input" />
 ;<<lingo config-site-extra-path>>
@@ -15,4 +21,4 @@ caption: <<lingo config-title>>
 
 <<lingo config-example-url>>
 
-{{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath}addsuffix<currentTiddler>] }}}
+{{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteProtocol}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath}addsuffix<currentTiddler>] }}}

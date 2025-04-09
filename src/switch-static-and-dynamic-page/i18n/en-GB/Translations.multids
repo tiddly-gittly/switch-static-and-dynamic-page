@@ -6,6 +6,7 @@ CopyStaticUrlToClipboard: Copy Static Server Page URL To Clipboard
 CopyStaticUrlToClipboardDescription: Copy the URL of the online site static card of this tiddler to the clipboard for sharing
 config-title: Static Page Switch
 config-description: These settings let you customise the behaviour of static page switcher buttons.
-config-site-host: Your website [ext[host|https://developer.mozilla.org/en-US/docs/Web/API/Location/host]], ''not'' ends with `/` (for example, if your wiki is in `https://pimgeek.com/notes/`, this will be `pimgeek.com/` here, of course you can also add `https://` prefix if you like)
+config-site-protocol: Your website protocol
+config-site-host: Your website [ext[host|https://developer.mozilla.org/en-US/docs/Web/API/Location/host]], ''not'' ends with `/` (for example, if your wiki is in `https://pimgeek.com/notes/`, this will be `pimgeek.com/` here)
 config-site-extra-path: Extra path after website host (for example, if your wiki is in `https://pimgeek.com/notes/`, you need to fill `notes/` here, ''ends with'' `/`. For example, if the blog is `https://wiki.onetwo.ren/`, fill `/` here)
 config-example-url: An example of static page url will be similar to:

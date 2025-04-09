@@ -6,6 +6,7 @@ CopyStaticUrlToClipboard: 复制静态服务器页面地址到剪贴板
 CopyStaticUrlToClipboardDescription: 将本条目在线上网站对应的静态卡片网址复制到剪贴板方便分享
 config-title: 静态页面切换
 config-description: 这些设置允许你自定义静态页面切换按钮的行为。
-config-site-host: 您的网站[ext[主机名|https://developer.mozilla.org/zh-CN/docs/Web/API/Location/host]]，''不''以 `/` 结尾（例如，如果您的维基位于 `https://pimgeek.com/notes/`，这里应填写 `pimgeek.com`，当然你喜欢的话也可以加上 `https://` 前缀变成 `https://pimgeek.com`）
+config-site-protocol: 您的网站协议
+config-site-host: 您的网站[ext[主机名|https://developer.mozilla.org/zh-CN/docs/Web/API/Location/host]]，''不''以 `/` 结尾（例如，如果您的维基位于 `https://pimgeek.com/notes/`，这里应填写 `pimgeek.com`）
 config-site-extra-path: 网站主机名之后的额外路径（例如，如果您的维基位于 `https://pimgeek.com/notes/`，这里需要填写 `/notes/`，''需要''以 `/` 结尾。例如如果博客是 `https://wiki.onetwo.ren/`，这里就填写 `/`）
 config-example-url: 静态页面URL示例将类似于：

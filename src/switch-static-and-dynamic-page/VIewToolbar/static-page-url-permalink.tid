@@ -7,7 +7,7 @@ description: {{$:/language/Exporters/StaticRiver}}  {{$:/language/Buttons/CopyTo
 \whitespace trim
 <$let
   encodedTitle={{{ [<currentTiddler>encodeuricomponent[]] }}}
-  staticPageUrl={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath}addsuffix<encodedTitle>] }}}
+  staticPageUrl={{{ [{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteProtocol}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteHost}addsuffix{$:/plugins/linonetwo/switch-static-and-dynamic-page/configs/SiteExtraPath}addsuffix<encodedTitle>] }}}
   buttonCaption=<<get-view-toolbar-copy-button-caption>>
 >
   <$button message="tm-copy-to-clipboard" param=<<staticPageUrl>> tooltip=<<buttonCaption>> aria-label=<<buttonCaption>> class=<<tv-config-toolbar-class>>>

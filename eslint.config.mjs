@@ -11,17 +11,10 @@ export default [
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ['./*.js', './*.mjs'],
+          allowDefaultProject: ['./*.js', './*.mjs', './wiki/tiddlers/tests/playwright/*.ts'],
         },
         tsconfigRootDir: __dirname,
       },
-    },
-  },
-  {
-    rules: {
-      'no-var': 'off',
-      '@typescript-eslint/no-unnecessary-condition': 'off',
-      '@typescript-eslint/restrict-template-expressions': ['warn', { allowNumber: true }],
     },
   },
 ];
